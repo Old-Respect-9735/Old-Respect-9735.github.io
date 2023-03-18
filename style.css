@@ -1,4 +1,5 @@
 s.navbar {
+    position: fixed;
     font-size: 1.15rem;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -17,29 +18,71 @@ s.navbar {
 }
 
 .header {
-    background: linear-gradient(135deg, #f1fbf2, #b9eef4);
-    padding: 100px;
+    padding: 80px;
+    height: fit-content;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-.team-info {
-    background-color: #212529;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.articles {
+    padding: 80px;
+    height: fit-content;
+    font-family: 'Source Sans Pro', sans-serif;
 }
-
+#greeting {
+    text-align: center;
+}
 #desc {
     margin-top: 10vmin;
+    padding: 10px;
+}
+#desc h1 {
+    font-size: 80px;
+}
+#respondbtn {
+    margin: 0 auto;
+    transition: transform .2s;
+}
+#respondbtn:hover {
+    transform:scale(1.05);
+}
+#mood {
+    align-content: center;
+    margin-left: 110px;
+    margin-top: 20px;
+    background-color: rgb(197, 226, 244);
+    border-radius: 20px;
+    width: fit-content;
+    padding: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+#mood.fade {
+    opacity: 1;
 }
 
+.moodBtn {
+    width: 5rem;
+    margin: 0 auto;
+}
+.moodBtn:hover {
+    transform:scale(1.05);
+}
 .meditate {
-    
+    width: 30rem;
+    margin: 0 auto;
+    transition: transform .2s;
+}
+.meditate:hover{
+    transform:scale(1.05);
 }
 
 .row {
     animation: 1s ease-out 0s 1 slideInLeft;
 }
 body {
-    margin: 0;
+    background: linear-gradient(135deg, #b5daf2, #7297ff);
 }

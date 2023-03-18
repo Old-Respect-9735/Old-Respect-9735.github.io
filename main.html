@@ -1,9 +1,9 @@
 <!DOCTYPE>
 <html>
     <head>
+        <title>Oasis</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel = "stylesheet" href = "style.css">
-        <script src = "main.js"></script>
     </head>
     <body id = "body">
         <div class="top-bar">
@@ -24,24 +24,32 @@
                       <li class="nav-item">
                         <a class="nav-link" href="javascript:void(0)">Product</a>
                       </li>
-                      
                     </ul>
                   </div>
+
                 </div>
             </nav>
             <div class="header">
                 <div class="container hero">
                     <div class="row">
                         <div id = "desc" class="col-12 col-lg-6 col-xl-5 offset-xl-1">
-                            <h1><strong>Leaf or Something</strong></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></p>
-                            <button
-                                class="btn btn-light btn-lg action-button" type="button">Learn More<i class="fa fa-long-arrow-right ml-2"></i>
-                            </button>
+                            <div id = "greeting">
+                                <h1><strong>Hello,</strong></h1>
+                                <h1 id = "guest-name"><strong>Visitor</strong></h1>
+                                <p>How are you feeling today?<br></p>
+                                <button
+                                    id = "respondbtn" class="btn btn-light btn-lg action-button" type="button">Respond<i class="fa fa-long-arrow-right ml-2"></i>
+                                </button>
+                                <div id = "mood">
+                                    <img class = "moodBtn" src = "https://www.svgrepo.com/download/309601/emoji-sad.svg">
+                                    <img class = "moodBtn" src = "https://www.svgrepo.com/show/372562/neutral-face.svg">
+                                    <img class = "moodBtn" src = "https://www.svgrepo.com/show/27273/smiley-with-closed-eyes-rounded-square-face.svg">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block phone-holder">
+                        <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block">
                             <div class="minful-graphic">
-                            <img class="meditate" src="https://www.creativefabrica.com/wp-content/uploads/2022/01/13/Meditation-practice-Concept-of-zen-Graphics-23383705-1-580x386.png" style = "width:40rem;">
+                            <img class="meditate" src="https://uploads-ssl.webflow.com/605c9014503aa417fc87808b/605dfe176839c4cdd4f28420_Test%20image.png">
                               <!--  <div class="screen">
                                 </div>
                                 
@@ -52,12 +60,13 @@
                 </div>
             </div>
         </div>
-        <div class = "team-info">
+        <div class = "articles">
             <div class="container hero">
                 <div class = "col-12">
-                    <h1><strong>Meet the Team</strong></h1>
+                    <p>Articles for You</p>
                 </div>
             </div>
         </div>
     </body>
+    <script src = "main.js"></script>
 </html>
