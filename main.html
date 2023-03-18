@@ -38,7 +38,7 @@
                                 <h1 id = "guest-name"><strong>Visitor</strong></h1>
                                 <p>How are you feeling today?<br></p>
                                 <button
-                                    id = "respondbtn" class="btn btn-light btn-lg action-button" type="button">Respond<i class="fa fa-long-arrow-right ml-2"></i>
+                                    id = "respondbtn" class="btn btn-light btn-lg action-button" type="button"><strong>Respond</strong><i class="fa fa-long-arrow-right ml-2"></i>
                                 </button>
                                 <div id = "mood">
                                     <img class = "moodBtn" src = "https://www.svgrepo.com/download/309601/emoji-sad.svg">
@@ -57,13 +57,24 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                    <svg id = "divider"
+                    class="curve"
+                    xmlns="http://www.w3.org/2000/svg"
+                    version="1.1"
+                    width="120%"
+                    height="100"
+                    viewBox="0 20 100 100"
+                    preserveAspectRatio="none"
+                    >
+                    <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+                    </svg>
+                    </div>
             </div>
         </div>
         <div class = "articles">
             <div class="container hero">
                 <div class = "col-12">
-                    <h1><strong>Articles For Your Mood</strong></h1>
+                    <h1 id = "media-head"><strong>Media For You</strong></h1>
                 </div>
             </div>
         </div>
