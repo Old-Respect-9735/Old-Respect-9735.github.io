@@ -225,22 +225,3 @@ document.getElementById("product").onclick = (e) => {
 respondBtn.onclick = (e) => {
     location.href = "questions.html";
 }
-
-// sad
-moodBtns[0].onclick = (e) => {
-    if (getComputedStyle(document.getElementById("mood")).opacity == 1) {
-        // do stuff
-    }
-}
-// neutral
-moodBtns[1].onclick = (e) => {
-    if (getComputedStyle(document.getElementById("mood")).opacity == 1) {
-        // do stuff
-    }
-}
-// happy
-moodBtns[2].onclick = (e) => {
-    if (getComputedStyle(document.getElementById("mood")).opacity == 1) {
-        // do stuff
-    }
-}
