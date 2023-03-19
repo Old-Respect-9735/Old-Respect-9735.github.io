@@ -103,3 +103,10 @@ s.navbar {
 body {
 
 }
+iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px;
+    border-color: #7297ff;
+}
