@@ -3,7 +3,7 @@ document.getElementById("other").addEventListener("click", function() {
     location.href = "bubblesgame.html";
 });
 document.getElementById("home").onclick = (e) => {
-    location.href = "main.html";
+    location.href = "index.html";
 }
 
 document.getElementById("submitBtn").addEventListener("click", function() {
@@ -30,11 +30,10 @@ document.getElementById("submitBtn").addEventListener("click", function() {
         aScore += parseInt(aAns[i].value);
     }
     aScore *= 2;
-    // location.href = "main.html";
     cumScore = 1000 - Math.round((dScore + sScore + aScore) * 1000/138);
     sessionStorage.setItem("dScore", dScore);
     sessionStorage.setItem("aScore", aScore);
     sessionStorage.setItem("sScore", sScore);
     sessionStorage.setItem("mentalScore", cumScore);
-    location.href = "main.html";
+    location.href = "index.html";
 });

@@ -217,7 +217,7 @@ document.getElementById("other").onclick = (e) => {
     location.href = "bubblesgame.html";
 }
 document.getElementById("home").onclick = (e) => {
-    location.href = "main.html";
+    location.href = "index.html";
 }
 document.getElementById("product").onclick = (e) => {
   location.href = "product.html";
