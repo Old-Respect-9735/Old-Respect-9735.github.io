@@ -161,3 +161,13 @@ iframe{
     border: 2px;
     border-color: #7297ff;
 }
+.question{
+    display: flex;
+}
+.questionBlock{
+margin-left: 10px;
+margin-top: 15px;
+}
+.qtext {
+    float: left;
+}
