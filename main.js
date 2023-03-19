@@ -1,7 +1,13 @@
 // this is a list remember idiot
 let respondBtn = document.getElementById("respondbtn");
 let moodBtns = document.getElementsByClassName("moodBtn"); 
-let responseCount = 0;
+
+document.getElementById("other").onclick = (e) => {
+    location.href = "bubblesgame.html";
+}
+document.getElementById("home").onclick = (e) => {
+    location.href = "main.html";
+}
 
 respondBtn.onclick = (e) => {
     document.getElementById("mood").classList.toggle("fade");
