@@ -79,23 +79,33 @@ s.navbar {
     text-align: center;
 }
 #questions {
-    margin: 50px;
+    margin: 100px;
     background-color: white;
     padding: 20px;
     border-radius: 20px;
-    font-family: 
 }
 #submitDiv {
     padding: 50px;
 }
+#submitBtn {
+    margin-top: -50px;
+}
 #submitBtn:hover {
     transform:scale(1.05);
+}
+#notice {
+    z-index: 100;
+    margin-top: 25vh;
+    margin-left: 20vh;
+    position: absolute;
+    font-size: 80px;
 }
 .content {
     background-color: #ddfcfe;
 }
 
 .media {
+    filter: none;
     margin-top: auto;
     padding: 20px;
 }
@@ -198,4 +208,10 @@ margin-top: 15px;
 }
 .subsection {
     font-size: 30px;
+}
+.expandableImg {
+    
+}
+.expandableImg:hover {
+    transform:scale(1.05);
 }

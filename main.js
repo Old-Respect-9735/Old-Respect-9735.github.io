@@ -1,6 +1,15 @@
 // this is a list remember idiot
 let respondBtn = document.getElementById("respondbtn");
 let moodBtns = document.getElementsByClassName("moodBtn"); 
+let media = document.getElementsByClassName("media")[0];
+
+if (sessionStorage.getItem("mentalScore") == null) {
+    media.style.filter = "blur(10px)";
+}
+else if (sessionStorage.getItem("mentalScore") != null) {
+    media.style.filter = "none";
+    document.getElementById("notice").style.display = "none";
+}
 
 var multipleCardCarousel = document.querySelector(
     "#carouselExampleControls"
