@@ -46,7 +46,9 @@ document.getElementById("other").onclick = (e) => {
 document.getElementById("home").onclick = (e) => {
     location.href = "main.html";
 }
-
+document.getElementById("product").onclick = (e) => {
+  location.href = "product.html";
+}
 respondBtn.onclick = (e) => {
     location.href = "questions.html";
 }
