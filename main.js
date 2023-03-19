@@ -39,7 +39,7 @@ document.getElementById("home").onclick = (e) => {
 }
 
 respondBtn.onclick = (e) => {
-    document.getElementById("mood").classList.toggle("fade");
+    location.href = "questions.html";
 }
 
 // sad

@@ -42,10 +42,6 @@ s.navbar {
 }
 #respondbtn {
     margin: 0 auto;
-    transition: transform .2s;
-}
-#respondbtn:hover {
-    transform:scale(1.05);
 }
 #mood {
     align-content: center;
