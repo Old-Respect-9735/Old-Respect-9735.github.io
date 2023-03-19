@@ -97,6 +97,9 @@ s.navbar {
     width: 120%;
 
 }
+.row {
+    animation: 1s ease-out 0s 1 slideInLeft;
+}
 body {
 
 }
