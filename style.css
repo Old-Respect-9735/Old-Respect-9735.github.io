@@ -104,6 +104,7 @@ s.navbar {
     text-align: center;
 }
 .content {
+    margin-top: -5px;
     background-color: #ddfcfe;
 }
 
@@ -131,7 +132,7 @@ s.navbar {
 .curve {
     fill: #ddfcfe;
     height: 100px;
-    width: 120%;
+    width: 140%;
 
 }
 .row {

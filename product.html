@@ -1,0 +1,108 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Oasis</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel = "stylesheet" href = "style.css">
+        <script src = "game.js" defer></script>
+    </head>
+    <body id = "body">
+            <nav class="navbar navbar-expand-sm fixed-top">
+                <div class="container-fluid">
+                  <a id = "home" class="navbar-brand" href="javascript:void(0)"><img src = "https://uploads-ssl.webflow.com/63617eb68a66008a1a2130a0/6377947e0aeae206d00d0a0f_Hero%20Hp%20Image%20Cropped.png" alt = "Logo" style = "width:40px;"> Oasis</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Team</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link"style ="background-color:lightslategrey; border-radius: 10px;" href="javascript:void(0)">Product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a id = "other" class="nav-link" href="javascript:void(0)">Other</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+            </nav>
+            <div class="header">
+              <div class="container hero">
+                  <div class="row">
+                      <div id = "desc" class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                          <div id = "greeting">
+                              <h1><strong>Products</strong></h1>
+                              <p>These are our products to promote self-mindfulness and wellbeing.</p>
+                          </div>
+                      </div>
+                      <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block">
+                          <div class="minful-graphic">
+                          <img class="meditate" src="https://www.peachmindfulness.com/wp-content/uploads/2020/10/daytime-stories-img@2x-1200x942-1.png">
+                            <!--  <div class="screen">
+                              </div>
+                              
+                              -->
+                          </div>
+                      </div>
+                  </div>
+                  <svg id = "divider"
+                  class="curve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  version="1.1"
+                  width="120%"
+                  height="100"
+                  viewBox="0 20 100 100"
+                  preserveAspectRatio="none"
+                  >
+                  <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+                  </svg>
+                  </div>
+          </div>
+          <div class = "content">
+          <div class = "mission">
+            <h1><br><strong>OpenCV Emotion Detector</strong></h1>
+            <div id = "missionId" class="container">
+              <!--Grid row-->
+              <div class="row">
+                <!--Grid column-->
+                <div class="col-md-8 mb-4">
+                  <!--Section: Post data-mdb-->
+                  <section class="border-bottom mb-4">
+                    <img src="images/OpenCV-Facial.png"
+                      class="img-fluid shadow-2-strong rounded-5 mb-4 expandableImg" alt="" />
+                  </section>
+                  <!--Section: Post data-mdb-->
+        
+                  <!--Section: Text-->
+                  <section>
+                    <p class = "subsection">
+                    </p>
+                    <p>
+        
+                     The Emotion Detector is a code that utilizes an open cv through the user's camera. By finding out the perfect values for a frowning face, we were able to differentiate between a frowning and a happy face. This can be useful for determining a user's mood and brightening their day by making them smile.
+
+                    </p>
+        
+                    <p class = "subsection"><br><strong>OpenCV Hands-off</strong></p>
+        
+                   <img src = "images/HandOff.png" class="img-fluid shadow-1-strong rounded-5 mb-4 expandableImg" alt = "Analysis">
+          
+                    <p>
+                      The Hands-off OpenCV program uses opencv as well as a hand tracking model to detect whether a user touched their face or not. Touching your face is generally unsanitary and can spread viruses, as well as it being an indicator of stress. This can be used to warn the user via auditory warning sounds to remind them not to touch their face. 
+                      <br>
+                      <br>
+                      Here is a demo-link:
+                      <a href ="https://github.com/GithubArnavSharma/HandOff/blob/6ca034247985157b1a08606565d95d4400f72160/app.py#L4">Hands-off Demo</a>
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+    </body>
+</html>
