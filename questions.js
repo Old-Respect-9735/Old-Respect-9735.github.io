@@ -31,7 +31,7 @@ document.getElementById("submitBtn").addEventListener("click", function() {
     }
     aScore *= 2;
     // location.href = "main.html";
-    cumScore = Math.round((dScore + sScore + aScore) * 1000/138);
+    cumScore = 1000 - Math.round((dScore + sScore + aScore) * 1000/138);
     sessionStorage.setItem("dScore", dScore);
     sessionStorage.setItem("aScore", aScore);
     sessionStorage.setItem("sScore", sScore);

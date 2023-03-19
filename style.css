@@ -100,6 +100,9 @@ s.navbar {
     position: absolute;
     font-size: 80px;
 }
+#carouselContainer {
+    text-align: center;
+}
 .content {
     background-color: #ddfcfe;
 }
