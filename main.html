@@ -186,12 +186,13 @@
     
                <img src = "images/depression_graph.png" class="img-fluid shadow-1-strong rounded-5 mb-4 expandableImg" alt = "Analysis">
       
-                <p class="note note-light">
-                  <strong>Note:</strong> This is our own analysis of data, which ...
+                <p class="note note-light" style = "font-size:10px;">
+                  <strong>Note:</strong> This analysis and model was based off of free use dataset from the National Institute of Health and Cambridge University.
                 </p>
       
                 <p>
-                  Here is a model created using the data of the past 17 years of depression rates in the United States, using the panda's folder. By looking at this data showing seasonality, I can also tell I would need to differentiate this graph around 2 times in order for the data to become stationary or not moving. This makes it easier for the time series model to predict the data.
+                    Here is a model created using the data of the past 17 years of depression rates in the United States, using the panda's folder. Observing this data, we can see a clear seasonality in the increase in depression rates. By using the ARIMA model, we are looking to incorporate a 2nd differenced model in order to make the data stationary. Along with this, the prediction of future years will be found by finding the moving average between the different points of the plot.<br>We can see in the year 2023, the Depression rates will increase by 1.3 percent and continue to grow over the years. By predicting this rate, we can see that the depression rates are not likely to slow down any time soon. By implementing our website, we can help to slow down this increase in depression and prevent people from being unhappy.
+
                 </p>
                 
                 <p class = "subsection">

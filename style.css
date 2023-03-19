@@ -105,7 +105,7 @@ s.navbar {
 }
 .content {
     margin-top: -5px;
-    background-color: #ddfcfe;
+    background-color: #eafafb;
 }
 
 .media {
@@ -130,7 +130,7 @@ s.navbar {
 }
 
 .curve {
-    fill: #ddfcfe;
+    fill: #eafafb;
     height: 100px;
     width: 140%;
 
