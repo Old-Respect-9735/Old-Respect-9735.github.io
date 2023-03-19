@@ -72,6 +72,28 @@ s.navbar {
 #carouselExampleControls {
     margin: 10px;
 }
+#missionId {
+    margin-left: 35vh;
+}
+#questionIntro {
+    text-align: center;
+}
+#questions {
+    margin: 50px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-family: 
+}
+#submitDiv {
+    padding: 50px;
+}
+#submitBtn:hover {
+    transform:scale(1.05);
+}
+.content {
+    background-color: #ddfcfe;
+}
 
 .media {
     margin-top: auto;
@@ -94,7 +116,7 @@ s.navbar {
 }
 
 .curve {
-    fill: #ffffff;
+    fill: #ddfcfe;
     height: 100px;
     width: 120%;
 
@@ -148,7 +170,7 @@ s.navbar {
     width: 40vh;
   }
 body {
-
+    overflow-x: hidden;
 }
 iframe{
     display: block;
@@ -166,4 +188,14 @@ margin-top: 15px;
 }
 .qtext {
     float: left;
+}
+.mission {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.mission h1 {
+    font-size: 60px;
+}
+.subsection {
+    font-size: 30px;
 }

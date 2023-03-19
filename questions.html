@@ -4,163 +4,360 @@
         <title>Oasis</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel = "stylesheet" href = "style.css">
-        <script src = "game.js" defer></script>
+        <script src = "questions.js" defer></script>
     </head>
     <body id = "body">
         <div class="top-bar">
-            <nav class="navbar navbar-expand-sm fixed-top">
-                <div class="container-fluid">
-                  <a id = "home" class="navbar-brand" href="javascript:void(0)"><img src = "https://uploads-ssl.webflow.com/63617eb68a66008a1a2130a0/6377947e0aeae206d00d0a0f_Hero%20Hp%20Image%20Cropped.png" alt = "Logo" style = "width:40px;"> Oasis</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="mynavbar">
-                    <ul class="navbar-nav mr-auto">
-                      <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Team</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="javascript:void(0)">Product</a>
-                      </li>
-                      <li class="nav-item">
-                        <a id = "other" class="nav-link" href="javascript:void(0)">Other</a>
-                      </li>
-                    </ul>
-                  </div>
+          <nav class="navbar navbar-expand-sm fixed-top">
+            <div class="container-fluid">
+              <a id = "home" class="navbar-brand" href="javascript:void(0)"><img src = "https://uploads-ssl.webflow.com/63617eb68a66008a1a2130a0/6377947e0aeae206d00d0a0f_Hero%20Hp%20Image%20Cropped.png" alt = "Logo" style = "width:40px;"> Oasis</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="javascript:void(0)">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a id = "other" class="nav-link" href="javascript:void(0)">Other</a>
+                  </li>
+                </ul>
+              </div>
 
+            </div>
+        </nav>
+        <div class="header">
+            <div class="container hero">
+                <div class="row">
+                    <div id = "desc" class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+                        <div id = "greeting">
+                            <h1><strong>Mental</strong></h1>
+                            <h1><strong>Questionaire</strong></h1>
+                            <p>Please respond to these questions<br>honestly to receive an accurate mental score.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-5 offset-lg-1 offset-xl-0 d-none d-lg-block">
+                        <div class="minful-graphic">
+                        <img class="meditate" src="https://www.projecthosts.com/wp-content/uploads/2022/09/Questions_Graphic.png">
+                          <!--  <div class="screen">
+                            </div>
+                            
+                            -->
+                        </div>
+                    </div>
                 </div>
-            </nav>
-            <div class="header">
-              <h1><strong>DASS21 Questionaire</strong></h1>
-              <p>Please read each statement and circle a number 0, 1, 2 or 3 which indicates how much the statement <br>applied to you over the past week. There are no right or wrong answers. <br>Do not spend too much time on any statement.
-                The rating scale is as follows:</p>
-                <p><strong>0</strong> Did not apply to me at all</p>
-                <p><strong>1</strong> Applied to me to some degree, or some of the time</p>
-                <p><strong>2</strong> Applied to me to a considerable degree or a good part of time</p>
-                <p><strong>3</strong> Applied to me very much or most of the time</p>
+                <svg id = "divider"
+                class="curve"
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                width="120%"
+                height="100"
+                viewBox="0 20 100 100"
+                preserveAspectRatio="none"
+                >
+                <path d="M0 100 C 20 0 50 0 100 100 Z"></path>
+                </svg>
+                </div>
+        </div>
+        <div class = "content">
+          <div id = "questionIntro">
+            <h1><strong>DASS21 Questionaire</strong></h1>
+            <p>Please read each statement and circle a number 0, 1, 2 or 3 which indicates how much the statement <br>applied to you over the past week. There are no right or wrong answers. <br>Do not spend too much time on any statement.
+              The rating scale is as follows:</p>
+              <p><strong>0</strong> Did not apply to me at all</p>
+              <p><strong>1</strong> Applied to me to some degree, or some of the time</p>
+              <p><strong>2</strong> Applied to me to a considerable degree or a good part of time</p>
+              <p><strong>3</strong> Applied to me very much or most of the time</p>
 
-            </div>
+          </div>
+      <div id = "questions">
+        <div class = "question s">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found it hard to wind down (s)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question a">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I was aware of dryness of my mouth (a)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question d">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I couldn't seem to experience any positive feeling at all (d)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question a">
+        <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I experienced breathing difficulty (e.g. excessively rapid breathing,
+          breathlessness in the absence of physical exertion) (a)</p>
+        <div>
+            <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found it hard to wind down (s)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
+        
+    </div>
+      <div class = "question d">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found it difficult to work up the initiative to do things (d)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question s">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I tended to over-react to situations (s)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question a">
+        <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I experienced trembling (e.g. in the hands) (a)</p>
+        <div>
+            <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I was aware of dryness of my mouth (a)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
+        
+    </div>
+
+    <div class = "question s">
+      <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt that I was using a lot of nervous energy (s)</p>
+      <div>
+          <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
+      </div>
+      
+  </div>
+
+  <div class = "question a">
+    <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I was worried about situations in which I might panic and make a fool of myself (a)</p>
+    <div>
+        <select class="questionBlock" id="exampleFormControlSelect1">
+          <option value = "0">0</option>
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+        </select>
+    </div>
+    
+</div>
+      <div class = "question d">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt that I had nothing to look forward to (d)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question s">
+        <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found myself getting agitated (s)</p>
+        <div>
+            <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I couldn't seem to experience any positive feeling at all (d)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
+        
+    </div>
+    <div class = "question s">
+      <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found it difficult to relax (s)</p>
+      <div>
+          <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
+      </div>
+      
+  </div>
+  <div class = "question d">
+    <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt down-hearted and blue (d)</p>
+    <div>
+        <select class="questionBlock" id="exampleFormControlSelect1">
+          <option value = "0">0</option>
+          <option value = "1">1</option>
+          <option value = "2">2</option>
+          <option value = "3">3</option>
+        </select>
+    </div>
+    
+</div>
+        <div class = "question s">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I was intolerant of anything that kept me from getting on with what I was doing (s)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                  <option value = "0">0</option>
+                  <option value = "1">1</option>
+                  <option value = "2">2</option>
+                  <option value = "3">3</option>
+                </select>
+          </div>
+          
+      </div>
+      <div class = "question a">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt I was close to panic (a)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question d">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I was unable to become enthusiastic about anything (d)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question d">
+        <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt I wasn’t worth much as a person (d)</p>
+        <div>
+            <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found it difficult to work up the initiative to do things (d)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
+        
+    </div>
+    <div class = "question s">
+      <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt that I was rather touchy (s)</p>
+      <div>
+          <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
+      </div>
+      
+  </div>
+      <div class = "question s">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt that I was using a lot of nervous energy (s)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                  <option value = "0">0</option>
+                  <option value = "1">1</option>
+                  <option value = "2">2</option>
+                  <option value = "3">3</option>
+                </select>
+          </div>
+          
+      </div>
+      <div class = "question s">
+          <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found myself getting agitated (s)</p>
+          <div>
+              <select class="questionBlock" id="exampleFormControlSelect1">
+                <option value = "0">0</option>
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+              </select>
+          </div>
+          
+      </div>
+      <div class = "question a">
+        <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I was aware of the action of my heart in the absence of physical exertion (e.g. sense of heart rate increase, heart missing a beat) (a)</p>
+        <div>
+            <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I tended to over-react to situations (s)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
+        
+      </div>
+      <div class = "question a">
+        <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;"> I felt scared without any good reason (a)</p>
+        <div>
+            <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt that I had nothing to look forward to (d)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
+        
+      </div>
+      <div class = "question d">
+        <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt that life was meaningless (d)</p>
+        <div>
+            <select class="questionBlock" id="exampleFormControlSelect1">
+              <option value = "0">0</option>
+              <option value = "1">1</option>
+              <option value = "2">2</option>
+              <option value = "3">3</option>
+            </select>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt I was close to panic (a)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
+        
+    </div>
+      </div>
+      <div id = "submitDiv">
+        <button id = "submitBtn" type="button" class="btn btn-primary btn-lg ">Submit</button>
+      </div>
         </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I was unable to become enthusiastic about anything (d)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
-        </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I felt that I was using a lot of nervous energy (s)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
-        </div>
-        <div class = "question">
-            <p class = "qtext" style = "margin-left: 80px; margin-top: 10px;">I found myself getting agitated (s)</p>
-            <div>
-                <select class="questionBlock" id="exampleFormControlSelect1">
-                    <option>0</option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                  </select>
-            </div>
-            
-        </div>
-        <Button style = "margin-left: 80px; margin-bottom: 30px;">Submit</Button>
     </body>
 </html>
